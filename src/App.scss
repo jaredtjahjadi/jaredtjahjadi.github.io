@@ -1,0 +1,52 @@
+/* Text properties */
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 42px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+/* Navigation bar */
+nav {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  align-items: center;
+
+  ul {
+    max-width: 70%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .active {
+    color: red;
+  }
+}
+
+/* Top section */
+#home {
+  /* Source of background image */
+  background-image: url("../public/images/bg-home.jpg");
+
+  /* Background image properties */
+  /* Makes it so that the home section covers the entire height of the window/screen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+
+  /* Text properties */
+  color: white;
+}
+
+#about-text {
+  max-width: 70%;
+  margin: 0 auto;
+}
