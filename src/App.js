@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './Navbar';
-import Home from './Home';
+import Hero from './Hero';
 import About from './About';
 import Resume from './Resume';
 import Projects from './Projects';
@@ -11,7 +11,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Home />
+      <Hero />
       <About />
       <Resume />
       <Projects />
