@@ -15,6 +15,7 @@ nav {
   top: 0;
   padding: 10px;
   align-items: center;
+  background-color: white;
 
   ul {
     max-width: 70%;
@@ -23,24 +24,22 @@ nav {
     padding: 0;
     display: flex;
     justify-content: space-between;
+
+    li { cursor: pointer; } // Cursor turns into pointer when hovering over navbar link
   }
 
-  .active {
-    color: red;
-  }
+  .active { color: red; } //Changes text color in navbar when page is on specific element
 }
 
 // Hero section 
 .hero {
-  // Source of background image
-  background-image: url("./img/bg-home.jpg");
+  background-image: url("./img/bg-home.jpg"); // Source of background image
 
   // Background image properties
-  // Makes it so that the home section covers the entire height of the window/screen
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
+  background-position: center center; // Vertically and horizontally centers image in hero element
+  height: 100vh; // Hero section covers entire height of device window/screen
 
   // Text properties
   display: flex;
@@ -59,6 +58,8 @@ nav {
   .about-image {
     height: 15%;
     width: 15%;
+    float: left;
+    padding: 5px;
   }
 }
 
@@ -67,14 +68,20 @@ nav {
   max-width: 70%;
   margin: 0 auto;
 
-  .edu-name {
+  .resume-card {
+    border-style: solid;
+    border-radius: 12px;
+    padding: 5px;
+  }
+
+  .name {
     text-align: left;
     display: inline-block;
     font-weight: bold;
     width: 50%;
   }
 
-  .edu-date {
+  .date {
     text-align: right;
     display: inline-block;
     width: 50%;
