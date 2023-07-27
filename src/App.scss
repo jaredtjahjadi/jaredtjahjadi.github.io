@@ -33,7 +33,7 @@ nav {
 
 // Hero section 
 .hero {
-  background-image: url("./img/bg-home.jpg"); // Source of background image
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg-home.jpg');
 
   // Background image properties
   background-size: cover;
@@ -71,7 +71,12 @@ nav {
   .resume-card {
     border-style: solid;
     border-radius: 12px;
-    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    ul {
+      margin-top: -5px;
+    }
   }
 
   .name {
@@ -86,6 +91,52 @@ nav {
     display: inline-block;
     width: 50%;
   }
+  
+  .name-date {
+    margin: -10px 5px 0px 5px;
+  }
+}
+
+// Projects section
+.projects {
+  max-width: 70%;
+  margin: 0 auto;
+
+  // Collection of project cards
+  .project-cards {
+    display: flex;
+    flex-direction: row; // New project cards are horizontally rather than vertically
+    margin-top: 10px;
+
+    // Each individual project card
+    .project-card {
+      position: relative;
+      padding-right: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      .project-card-content {
+        position: absolute;
+        bottom: 0;
+        background-color: white;
+      }
+
+      .project-card-img:hover + .project-card-content {
+        display: block;
+      }
+
+      .project-card-content:hover + project-card-content {
+        display: block;
+      }
+    }
+  }
+
+  .project-card-content {
+    display: none;
+  }
 }
 
 // Contact section
@@ -93,4 +144,12 @@ nav {
   max-width: 70%;
   margin: 0 auto;
   text-align: center;
+
+  .social-icons {
+    margin: 20px 0px;
+  }
+
+  .icon {
+    margin: 0px 2.5px;
+  }
 }
