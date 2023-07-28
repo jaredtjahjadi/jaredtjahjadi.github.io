@@ -1,13 +1,15 @@
 import React from 'react';
 
-export default function ProjectCard({name, image, altText}) {
+export default function ProjectCard({name, image, altText, desc, link}) {
     return (
         <div className="project-card">
             <div className="project-card-img">
-                <img src={image} alt={altText} />
+                <img className="blur zoom" src={image} alt={altText} />
             </div>
             <div className="project-card-content">
-                {name}
+                <div className="text">{name}</div>
+                <div className="text">{desc}</div>
+                <div className="text"><a href={link}>GitHub Link</a></div>
             </div>
         </div>
     )
