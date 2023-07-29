@@ -5,11 +5,15 @@ export default function About() {
     return (
         <div className='about'>
             <h1>About</h1>
-            <img className='about-image' src={AboutImage} alt="Jared Tjahjadi" />
-            <div id="about-text">
-                My name is Jared Tjahjadi. I am an undergraduate student from Queens, NY, currently studying Computer Science at Stony Brook University.<br />
-                In my free time, I enjoy listening to music, going to the gym, and taking walks.
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <div className='about-content'>
+                <div className='about-image'>
+                    <img src={AboutImage} alt="Jared Tjahjadi" />
+                </div>
+                <div id="about-text">
+                    My name is Jared Tjahjadi. I am an undergraduate student from Queens, NY, currently studying Computer Science at Stony Brook University.
+                    <br /><br />
+                    In my free time, I enjoy listening to music, going to the gym, and taking walks.
+                </div>
             </div>
         </div>
     )

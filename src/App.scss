@@ -1,7 +1,5 @@
 // Text properties
-h1 {
-  font-size: 42px;
-}
+h1 { font-size: 42px; }
 
 h1, h2 {
   margin-top: 0;
@@ -33,6 +31,7 @@ nav {
 
 // Hero section 
 .hero {
+  // Background image has a slightly darker gradient
   background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg-home.jpg');
 
   // Background image properties
@@ -53,14 +52,20 @@ nav {
   max-width: 70%;
   margin: 0 auto;
 
-  // Placeholder values for now
-  // TODO: Style image so that it resizes based on screen size
-  .about-image {
-    height: 15%;
-    width: 15%;
+  .about-content::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .about-image, .about-text {
     float: left;
     padding: 5px;
   }
+
+  .about-image { width: 33.33%; }
+  .about-text { width: 66.67%; }
+  img { max-width: 100%; }
 }
 
 // Resume section
@@ -74,9 +79,7 @@ nav {
     margin-top: 10px;
     margin-bottom: 10px;
 
-    ul {
-      margin-top: -5px;
-    }
+    ul { margin-top: -5px; } // Shift unordered list up
   }
 
   .name {
@@ -92,9 +95,7 @@ nav {
     width: 50%;
   }
   
-  .name-date {
-    margin: -10px 5px 0px 5px;
-  }
+  .name-date { margin: -10px 5px 0px 5px; }
 }
 
 // Projects section
@@ -158,11 +159,6 @@ nav {
   margin: 0 auto;
   text-align: center;
 
-  .social-icons {
-    margin: 20px 0px;
-  }
-
-  .icon {
-    margin: 0px 2.5px;
-  }
+  .social-icons { margin: 20px 0px; }
+  .icon { margin: 0px 2.5px; }
 }
