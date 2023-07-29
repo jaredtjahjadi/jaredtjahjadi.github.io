@@ -27,12 +27,42 @@ nav {
   }
 
   .active { color: red; } //Changes text color in navbar when page is on specific element
+
+  .hamburger {
+    right: 25px;
+    display: none;
+  }
+}
+
+// Responsive navbar
+@media screen and (max-width: 768px) {
+  nav {
+    ul {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      height: calc(100vh - 77px);
+      background-color: white;
+      border-top: 1px solid block;
+    }
+
+    li {
+      text-align: center;
+      margin: 0;
+    }
+    
+    li:hover { background-color: #eee; }
+  }
+
+  .hamburger { display: block; }
 }
 
 // Hero section 
 .hero {
   // Background image has a slightly darker gradient
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg-home.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg_home.jpg');
 
   // Background image properties
   background-size: cover;
@@ -49,6 +79,7 @@ nav {
 
 // About section
 .about {
+  padding: 30px 0px;
   max-width: 70%;
   margin: 0 auto;
 
@@ -63,22 +94,34 @@ nav {
     padding: 5px;
   }
 
-  .about-image { width: 33.33%; }
-  .about-text { width: 66.67%; }
+  .about-image { width: 20%; }
+  .about-text { width: 80%; }
   img { max-width: 100%; }
 }
 
 // Resume section
+.resume-wrapper {
+  // Background image properties
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg_resume.jpg'); // Background image has a slightly darker gradient
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; // Vertically and horizontally centers image in hero element
+}
+
 .resume {
+  padding: 30px;
   max-width: 70%;
   margin: 0 auto;
 
   .resume-card {
+    background-color: white;
     border-style: solid;
     border-radius: 12px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px;
+    padding-bottom: 5px;
 
+    .coursework-title { font-weight: bold; }
+    .coursework-content, .coursework-title { display: inline; }
     ul { margin-top: -5px; } // Shift unordered list up
   }
 
@@ -105,15 +148,14 @@ nav {
 
   // Collection of project cards
   .project-cards {
-    display: flex;
-    flex-direction: row; // New project cards are horizontally rather than vertically
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     margin-top: 10px;
     text-align: center;
 
     // Each individual project card
     .project-card {
       position: relative;
-      padding-right: 10px;
       overflow: hidden; // When the image is hovered over it gets bigger but outer edge overflow will be hidden
 
       img {
