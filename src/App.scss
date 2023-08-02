@@ -27,36 +27,6 @@ nav {
   }
 
   .active { color: red; } //Changes text color in navbar when page is on specific element
-
-  .hamburger {
-    right: 25px;
-    display: none;
-  }
-}
-
-// Responsive navbar
-@media screen and (max-width: 768px) {
-  nav {
-    ul {
-      position: absolute;
-      top: 60px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      height: calc(100vh - 77px);
-      background-color: white;
-      border-top: 1px solid block;
-    }
-
-    li {
-      text-align: center;
-      margin: 0;
-    }
-    
-    li:hover { background-color: #eee; }
-  }
-
-  .hamburger { display: block; }
 }
 
 // Hero section 
@@ -203,4 +173,8 @@ nav {
 
   .social-icons { margin: 20px 0px; }
   .icon { margin: 0px 2.5px; }
+}
+
+@media screen and (max-width: 768px) {
+  .about { max-width: 90%; }
 }
