@@ -1,4 +1,4 @@
-import ResumePDF from './JaredTjahjadi.pdf';
+import ResumePDF from '../JaredTjahjadi.pdf';
 import ResumeCard from './ResumeCard';
 
 export default function Resume() {

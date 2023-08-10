@@ -39,7 +39,7 @@ nav.active {
 // Hero section 
 .hero {
   // Background image has a slightly darker gradient
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg_home.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/bg_home.jpg');
 
   // Background image properties
   background-size: cover;
@@ -80,7 +80,7 @@ nav.active {
 // Resume section
 .resume-wrapper {
   // Background image properties
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./img/bg_resume.jpg'); // Background image has a slightly darker gradient
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('./assets/bg_resume.jpg'); // Background image has a slightly darker gradient
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; // Vertically and horizontally centers image in hero element

@@ -1,7 +1,7 @@
 import ProjectCard from './ProjectCard';
-import ImgWebsite from './img/proj_website.png';
-import ImgTYH from './img/proj_tyh.png';
-import ImgROB from './img/proj_rob.png';
+import ImgWebsite from '../assets/proj_website.png';
+import ImgTYH from '../assets/proj_tyh.png';
+import ImgROB from '../assets/proj_rob.png';
 
 export default function Projects() {
     return (
