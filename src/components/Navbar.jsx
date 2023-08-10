@@ -2,28 +2,23 @@ import { useState } from 'react';
 import { Link } from 'react-scroll';
 
 export default function Navbar() {
+    // Handles hamburger menu (responsive to smaller screens)
     const [click, setClick] = useState(false);
-    // const handleClick = () => setClick(!click);
+    const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    // const [button, setButton] = useState(false);
 
     // Handles toggling navbar transparency
     const [navbar, setNavbar] = useState(false);
-    const changeBG = () => {
-        if(window.scrollY >= 60)
-            setNavbar(true);
-        else
-            setNavbar(false);
-    }
+    const changeBG = () => { setNavbar(window.scrollY >= 60); }
     window.addEventListener('scroll', changeBG);
 
     // To be rendered
     return (
         <nav className={navbar ? 'active' : ''}>
-            <div className='menu'>
+            <div className='menu' onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
-            <ul>
+            <ul className={click ? 'open' : ''}>
                 <li><Link to="hero" spy smooth duration={500} onClick={closeMobileMenu}>Home</Link></li>
                 <li><Link to="about" spy smooth duration={500} onClick={closeMobileMenu}>About</Link></li>
                 <li><Link to="resume" spy smooth duration={500} onClick={closeMobileMenu}>Resume</Link></li>
