@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 
 export default function ResumeCard({name, date, addl_text, courseworkTitle, courseworkContent, listItem1, listItem2, listItem3}) {
     return (

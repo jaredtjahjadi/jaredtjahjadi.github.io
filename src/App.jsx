@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.scss';
 import Navbar from './Navbar';
 import Hero from './Hero';

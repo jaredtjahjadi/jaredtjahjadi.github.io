@@ -1,4 +1,3 @@
-import React from 'react';
 import ProjectCard from './ProjectCard';
 import ImgWebsite from './img/proj_website.png';
 import ImgTYH from './img/proj_tyh.png';

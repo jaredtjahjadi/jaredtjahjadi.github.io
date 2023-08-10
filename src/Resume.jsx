@@ -1,4 +1,3 @@
-import React from 'react';
 import ResumePDF from './JaredTjahjadi.pdf';
 import ResumeCard from './ResumeCard';
 

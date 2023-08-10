@@ -1,6 +1,6 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 
-export default function ProjectCard({name, image, altText, desc, link}) {
+export default function ProjectCard({name, image, altText, desc, link}) {    
     return (
         <div className="project-card">
             <div className="project-card-img">
