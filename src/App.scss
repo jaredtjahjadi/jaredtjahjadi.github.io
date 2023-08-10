@@ -14,6 +14,7 @@ nav {
   padding: 10px;
   align-items: center;
   background-color: white;
+  z-index: 9999; // Sets navbar to highest layer so that it goes over all other elements (9999 is an arbitrary value)
 
   ul {
     max-width: 70%;
