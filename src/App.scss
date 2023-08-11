@@ -34,27 +34,37 @@ nav {
   .active { color: red; } //Changes text color in navbar when page is on specific element
 }
 
+// Smaller screens
 @media screen and (max-width: 960px) {
-  nav .menu {
-    display: block;
-    position: absolute;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  }
+  nav {
+    // Hamburger menu icon
+    .menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      text-align: center;
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 86vh;
-    position: absolute;
-    top: 60px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    text-align: center;
+      li {
+        display: table;
+        padding: 2rem;
+      }
+    }
   }
 
   nav ul.open {
@@ -131,6 +141,17 @@ nav.active {
   max-width: 70%;
   margin: 0 auto;
   color: white;
+
+  .pdf-button {
+    text-align: center;
+
+    button {
+      border-radius: 10px;
+      padding: 10px 60px;
+      margin: 10px 0px;
+      cursor: pointer;
+    }
+  }
 
   .resume-card {
     color: black;
