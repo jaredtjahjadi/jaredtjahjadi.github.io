@@ -34,54 +34,6 @@ nav {
   .active { color: red; } //Changes text color in navbar when page is on specific element
 }
 
-// Smaller screens
-@media screen and (max-width: 960px) {
-  nav {
-    // Hamburger menu icon
-    .menu {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.8rem;
-      cursor: pointer;
-    }
-    
-    ul {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 90vh;
-      position: absolute;
-      top: 60px;
-      left: -100%;
-      opacity: 1;
-      transition: all 0.5s ease;
-      text-align: center;
-
-      li {
-        display: table;
-        padding: 2rem;
-      }
-    }
-  }
-
-  nav ul.open {
-    max-width: 100%;
-    background-color: #222222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-}
-
 nav.active {
   background: linear-gradient(90deg, rgb(89, 128, 136) 0%, rgb(122, 134, 133) 100%);
 }
@@ -146,10 +98,16 @@ nav.active {
     text-align: center;
 
     button {
+      font-weight: bold;
       border-radius: 10px;
       padding: 10px 60px;
       margin: 10px 0px;
       cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: rgba(255, 255, 255, 0.699);
+      transition: 200ms ease-in-out;
     }
   }
 
@@ -248,6 +206,54 @@ nav.active {
   .icon { margin: 0px 2.5px; }
 }
 
-@media screen and (max-width: 768px) {
-  .about { max-width: 90%; }
+// Smaller screens
+@media screen and (max-width: 960px) {
+  nav {
+    // Hamburger menu icon
+    .menu {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 60px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      text-align: center;
+
+      li {
+        display: table;
+        padding: 2rem;
+      }
+    }
+  }
+
+  nav ul.open {
+    max-width: 100%;
+    background-color: #222222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .about, .resume, .projects {
+    max-width: 95%;
+  }
 }
