@@ -7,9 +7,7 @@ export default function Resume() {
             <div className="resume">
                 <h1>Resume</h1>
                 <div className="pdf-button">
-                    <a href={ResumePDF} target="_blank" rel="noreferrer">
-                        <button>View Resume PDF</button>
-                    </a>
+                    <a href={ResumePDF} target="_blank" rel="noreferrer"><button>View Resume PDF</button></a>
                 </div>
                 <h2>Education</h2>
                 <ResumeCard

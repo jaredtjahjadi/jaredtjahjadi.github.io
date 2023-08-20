@@ -1,15 +1,14 @@
 /* eslint-disable react/prop-types */
 
-export default function ProjectCard({name, image, altText, desc, link}) {    
+export default function ProjectCard({name, image, altText, date, desc, link}) {    
     return (
         <div className="project-card">
-            <div className="project-card-img">
-                <img className="blur zoom" src={image} alt={altText} />
-            </div>
+            <img className="blur zoom" src={image} alt={altText} />
             <div className="project-card-content">
-                <div className="text">{name}</div>
-                <div className="text">{desc}</div>
-                <div className="text"><a href={link}>GitHub Link</a></div>
+                <div className="project-card-name">{name}</div>
+                <div className="project-card-date">{date}</div>
+                <div className="project-card-desc">{desc}</div>
+                <a href={link}><button>GitHub Link</button></a>
             </div>
         </div>
     )

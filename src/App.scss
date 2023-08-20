@@ -150,48 +150,61 @@ nav.active {
   .project-cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 0.5rem;
     margin-top: 10px;
     text-align: center;
 
     // Each individual project card
     .project-card {
+      border: 4px solid black;
+      border-radius: 20px;
       position: relative;
       overflow: hidden; // When the image is hovered over it gets bigger but outer edge overflow will be hidden
 
       img {
-        height: auto;
-        width: 80%;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
-        object-position: center;
+        border-radius: 15px;
       }
 
       .project-card-content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: -100%;
         position: absolute;
-        inset: 0;
-        padding: 1rem;
-        background: rgba(255, 255, 255, .4);
+        background: #2e505b38;
+        backdrop-filter: blur(10px);
+        color: white;
+        border-radius: 15px;
         display: flex;
-        opacity: 0; // Project card content is initially invisible
-        justify-content: center; // Horizontally centers the text
-        align-items: center; // Vertically centers the text
-        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.5s;
 
-        .text {
-          display: flex;
-          flex-direction: row;
+        .project-card-name {
+          font-weight: bold;
         }
       }
-      
-      // Img -> content transition effect
-      img, .project-card-content { transition: 200ms ease-in-out; }
+
+      button {
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      button:hover {
+        background-color: rgba(255, 255, 255, 0.699);
+        transition: 200ms ease-in-out;
+      }
     }
 
     // Properties that take effect upon hovering on a project-card
-    .project-card:hover {
-      img.blur { filter: blur(5px); } // Blurs the image
-      img.zoom { transform: scale(1.1); } // Zooms image in
-      .project-card-content { opacity: 1; } // Makes the project card content visible
-    }
+    .project-card:hover .project-card-content { right: 0; }
   }
 }
 
