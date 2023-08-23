@@ -8,7 +8,10 @@ export default function ProjectCard({name, image, altText, date, desc, link}) {
                 <div className="project-card-name">{name}</div>
                 <div className="project-card-date">{date}</div>
                 <div className="project-card-desc">{desc}</div>
-                <a href={link}><button>GitHub Link</button></a>
+                <button onClick={(e) => {
+                    e.preventDefault();
+                    window.open(link);
+                }}>GitHub Link</button>
             </div>
         </div>
     )

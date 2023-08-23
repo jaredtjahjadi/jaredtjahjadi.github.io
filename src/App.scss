@@ -31,7 +31,7 @@ nav {
 
   .menu { display: none; } // Hamburger menu not visible when screen is large enough
 
-  .active { color: red; } //Changes text color in navbar when page is on specific element
+  .active { color: rgb(0, 183, 255); } //Changes text color in navbar when page is on specific element
 }
 
 nav.active {
@@ -63,18 +63,21 @@ nav.active {
   max-width: 70%;
   margin: 0 auto;
 
+  .about-content {
+    padding-top: 20px;
+  }
+  
   .about-content::after {
     content: "";
     clear: both;
     display: table;
   }
 
-  .about-image, .about-text {
+  .about-image {
     float: left;
-    padding: 5px;
+    width: 20%;
+    padding-right: 8px;
   }
-
-  .about-image { width: 20%; }
   .about-text { width: 80%; }
   img { max-width: 100%; }
 }
@@ -95,13 +98,13 @@ nav.active {
   color: white;
 
   .pdf-button {
+    padding: 10px 0px;
     text-align: center;
 
     button {
       font-weight: bold;
       border-radius: 10px;
       padding: 10px 60px;
-      margin: 10px 0px;
       cursor: pointer;
     }
     
@@ -148,6 +151,7 @@ nav.active {
 
   // Collection of project cards
   .project-cards {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-gap: 0.5rem;
@@ -181,30 +185,46 @@ nav.active {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         transition: 0.5s;
 
         .project-card-name {
           font-weight: bold;
+          padding: 10px;
+          font-size: 24px;
+        }
+        
+        .project-card-date {
+          color: rgb(209, 203, 203);
+          border: 2px solid rgb(209, 203, 203);
+          border-radius: 8px;
+          padding: 5px 8px;
+        }
+        
+        .project-card-desc {
+          max-width: 85%;
+          padding: 20px;
+        }
+
+        button {
+          width: auto;
+          padding: 8px 15px;
+          border-radius: 8px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          font-weight: bold;
         }
       }
 
-      button {
-        padding: 10px 20px;
-        border-radius: 8px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        font-weight: bold;
-      }
-
+      // Takes effect upon hovering over button
       button:hover {
-        background-color: rgba(255, 255, 255, 0.699);
-        transition: 200ms ease-in-out;
+        background-color: rgb(212, 212, 212); // Change button color
+        transition: 200ms ease-in-out; // Transition to new button color
       }
     }
 
-    // Properties that take effect upon hovering on a project-card
-    .project-card:hover .project-card-content { right: 0; }
+    .project-card:hover .project-card-content { right: 0; } // Takes effect upon hovering over project-card
   }
 }
 
@@ -215,8 +235,12 @@ nav.active {
   margin: 0 auto;
   text-align: center;
 
+  .contact-content {
+    padding-top: 20px;
+  }
+
   .social-icons { margin: 20px 0px; }
-  .icon { margin: 0px 2.5px; }
+  .icon { margin: 0px 4px; }
 }
 
 // Smaller screens
