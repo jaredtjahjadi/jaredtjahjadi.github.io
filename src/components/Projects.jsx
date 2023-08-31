@@ -5,7 +5,7 @@ import ImgROB from '../assets/proj_rob.png';
 
 const desc_website = "Jared Tjahjadi's personal website, developed using React.js. The website you're viewing right now!";
 const desc_tyh = "A point-and-click game in which the player is a \"god\" that controls a human's daily routine. Participant in Stony Brook University Game Development & Design Club's 2023 Ren'Py Competition.";
-const desc_rob = "A general usage Discord bot written in JavaScript using the Node.js module Discord.js. Contains general utilities and text-baesd games in which the bot automatically sends messages with different text based on user input.";
+const desc_rob = "A general usage Discord bot written in JavaScript using the Node.js module Discord.js. Contains general utilities and text-based games in which the bot automatically sends messages with different text based on user input.";
 
 export default function Projects() {
     return (
