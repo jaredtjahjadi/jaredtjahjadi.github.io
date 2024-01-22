@@ -15,7 +15,7 @@ export default function Resume() {
                     date={"Aug 2020 — May 2024"}
                     addl_text={"Bachelor of Science in Computer Science"}
                     courseworkTitle={"Relevant coursework: "}
-                    courseworkContent={"Object-Oriented Programming, Data Structures, Discrete Mathematics, Programming Abstractions, Systems Fundamentals, Theory of Computation, Computer Networks, Analysis of Algorithms"}
+                    courseworkContent={"Object-Oriented Programming, Data Structures, Discrete Mathematics, Theory of Computation, Computer Networks, Analysis of Algorithms, Compiler Design, Natural Language Processing, Full-Stack Web Development"}
                 />
                 <ResumeCard
                     name={"Forest Hills High School"}
