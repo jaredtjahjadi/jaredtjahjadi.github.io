@@ -1,10 +1,25 @@
 # Jared Tjahjadi's Personal Website
 
-My name is Jared Tjahjadijare and I am an undergraduate student majoring in Computer Science at Stony Brook University. This is the source code for my personal website.
+Hi! My name is Jared Tjahjadi. I am currently an Associate Modeling & Simulation Engineer at MITRE. This is the source code for my personal website.
 
 ## Website URL
 
 https://jaredtjahjadi.github.io
+
+## How to Use
+1. Clone into a folder on your computer:
+```bash
+git clone https://github.com/jaredtjahjadi/jaredtjahjadi.github.io.git # HTML
+```
+2. Install Node packages
+```bash
+cd jaredtjahjadi.github.io
+npm i
+```
+3. Run the website locally:
+```bash
+npm run dev
+```
 
 ## To-Do
 

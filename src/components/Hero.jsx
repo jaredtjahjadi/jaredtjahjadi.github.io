@@ -3,7 +3,7 @@ export default function Hero() {
         <div className="hero">
             <div className="hero-text">
                 <h1>Jared Tjahjadi</h1>
-                <h2>Undergraduate Computer Science Student</h2>
+                <h2>Software Engineer</h2>
             </div>
         </div>
     )

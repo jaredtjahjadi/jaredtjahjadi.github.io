@@ -27,7 +27,9 @@ export default function Resume() {
                 <ResumeCard
                     name={"Associate Modeling & Simulation Engineer, MITRE"}
                     date={"Oct 2024 — Present"}
-                    listItem1={"TBA"}
+                    listItem1={"Developed an identification service for a program interacting with a middleware that sends and receives aircraft messages and events, allowing for accurate identification of platforms in a scenario and contributing towards the key goals of federal sponsors"}
+                    listItem2={"Created a full-stack web app using Flask and Plotly Dash that interacts with the OpenAI API to display an artificial intelligence-backed analysis on user-implemented aircraft simulations, accomplishing the sponsor priority of increased usage of AI"}
+                    listItem3={"Collaborated with a Chief Engineer to orchestrate a script that models airline routes and determines route regions based on real-time airport and flight data, which will be used by the United States government to test new platform capabilities"}
                 />
                 <ResumeCard
                     name={"Undergraduate Teaching Assistant, Stony Brook University"}
